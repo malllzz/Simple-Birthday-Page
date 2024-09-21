@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #1400bc 5%, #8c3bf5 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainbox {
+  display: flex;
+  width: 60%;
+  background-color: rgba(93, 31, 227, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.7s ease;
+}
+
+.mainbox:hover {
+  transform: scale(1.05);
+}
+
+.hbdpict {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.hbdpict img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.textcontent {
+  flex: 2;
+  color: white;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.hbdtitle h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hbdtext1 {
+  font-weight: bold;
+}
+
+.hbdtext2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .mainbox {
+    flex-direction: column; 
+  }
+  .hbdpict {
+    order: -1;
+  }
+  .hbdtitle h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+}
